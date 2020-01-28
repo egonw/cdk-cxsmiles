@@ -11,7 +11,7 @@ We can also create depictions of CXSMILES with Groovy code, here for a class of 
 
 The output looks like this:
 
-![SVG depiction of the lipds](./images/generates/lipids.svg)
+![SVG depiction of the lipds](./images/generated/lipids.svg)
 
 ## References
 

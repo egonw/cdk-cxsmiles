@@ -18,7 +18,7 @@ new DepictionGenerator()
 
 The output looks like this:
 
-![SVG depiction of the lipds](./images/generates/lipids.svg)
+![SVG depiction of the lipds](./images/generated/lipids.svg)
 
 ## References
 
