@@ -17,6 +17,7 @@ License: CC-BY 4.0 International
 3.1. [Maximal Common Substructure](chapter2.md#maximal-common-substructure) <br />
 3.2. [SDF in, CXSMILES out](chapter2.md#sdf-in,-cxsmiles-out) <br />
 4. [Depiction of CXSMILES](depict.md) <br />
+4.1. [Groovy code](depict.md#groovy-code) <br />
 5. [Enumerating chemical structures for a CXSMILES](enumeration.md) <br />
 5.1. [Filtering by molecular formular](enumeration.md#filtering-by-molecular-formular) <br />
 
