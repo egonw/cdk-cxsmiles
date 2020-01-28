@@ -7,6 +7,7 @@ import org.openscience.cdk.DefaultChemObjectBuilder;
 import org.openscience.cdk.isomorphism.UniversalIsomorphismTester;
 @Grab(group='org.openscience.cdk', module='cdk-smiles', version='2.3')
 @Grab(group='org.openscience.cdk', module='cdk-data', version='2.3')
+
 uiTester = new UniversalIsomorphismTester();
 sp = new SmilesParser(
   DefaultChemObjectBuilder.getInstance()
