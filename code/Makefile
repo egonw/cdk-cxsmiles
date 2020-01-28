@@ -53,6 +53,7 @@ allScriptsCompiled: ${CODEFILES}
 	@groovy ${OPTIONS} -d $< | grep -v "net.sf.jnati.deploy." | groovy ../wrap.groovy > $@
 	@if [ -e *.png ]; then mogrify -trim *.png ; fi
 	@if [ -e *.png ]; then mv *.png ../images/generated/. ; fi
+	@if [ -e *.svg ]; then mv *.svg ../images/generated/. ; fi
 	@groovy postprocess $<
 
 DebugBuilder.datadebug.out: DebugBuilder.out
