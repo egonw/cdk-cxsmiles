@@ -14,6 +14,10 @@ or <topic>MCS</topic>. The code for this would look like this:
 
 <code>MCS</code>
 
+For the two given input structures, it finds one overlap:
+
+<out>MCS</out>
+
 ## SDF in, CXSMILES out
 
 
