@@ -21,10 +21,10 @@ files = basedir.listFiles().grep(~/.*i.md$/)
 files.each { file ->
   file.eachLine { line ->
     try {
-      if (line.contains("<sparql>")) {
-        start = line.indexOf("<sparql>")
-        end = line.indexOf("</sparql>")
-        text = line.substring(start + 8, end)
+      if (line.contains("<code>")) {
+        start = line.indexOf("<code>")
+        end = line.indexOf("</code>")
+        text = line.substring(start + 6, end)
         println "" + text + suffix
       } else if (line.contains("<out>")) {
         start = line.indexOf("<out>")

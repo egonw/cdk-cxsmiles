@@ -1,33 +1,15 @@
-# Introduction
+# Core Structures
 
-## Including Groovy code examples
-
-This is how you include a script:
-
-**Script** [code/Example.groovy](code/Example.code.md)
-```groovy
-@Grab(group='org.openscience.cdk', module='cdk-bundle', version='2.3')
-import org.openscience.cdk.smiles.SmilesParser;
-import org.openscience.cdk.interfaces.*;
-import org.openscience.cdk.*;
-sp = new SmilesParser(
-  DefaultChemObjectBuilder.getInstance()
-)
-mol = sp.parseSmiles("CC(=O)OC1=CC=CC=C1C(=O)O")
-println "Aspirin has ${mol.atomCount} atoms."
-```
-
-And this is how to include the output:
-
-Aspirin has 13 atoms.
-
-## Including references
-
-You can include references by proviing the Wikidata item identifier
-for the paper, e.g. like [<a href="#citeref1">1</a>].
+At the Dagstuhl Computation Metabolomics meeting there was a session about core structures.
+The research question here is what the right balance is of representation of multiple
+structures, matching measured data. CXSMILES came up as one solution.
+This repository contains code using the Chemistry Development Kit [<a href="#citeref1">1</a>,<a href="#citeref2">2</a>,<a href="#citeref3">3</a>]
+for various tasks around this question. The following chapters discuss these.
 
 ## References
 
-1. <a name="citeref1"></a>Willighagen L, Willighagen LG. Citation.js: a format-independent, modular bibliography tool for the browser and command line. PeerJ Comput Sci. 2019 Aug 12;5:e214.  doi:[10.7717/PEERJ-CS.214](https://doi.org/10.7717/PEERJ-CS.214) ([Scholia](https://tools.wmflabs.org/scholia/doi/10.7717/PEERJ-CS.214))
+1. <a name="citeref1"></a>Steinbeck C, Han Y, Kuhn S, Horlacher O, Luttmann E, Luttmann E, et al. The Chemistry Development Kit (CDK): an open-source Java library for Chemo- and Bioinformatics. JCIM. 2003 Feb 11;43(2):493–500.  doi:[10.1021/CI025584Y](https://doi.org/10.1021/CI025584Y) ([Scholia](https://tools.wmflabs.org/scholia/doi/10.1021/CI025584Y))
+2. <a name="citeref2"></a>Steinbeck C, Hoppe C, Hoppe C, Kuhn S, Floris M, Guha R, et al. Recent Developments of the Chemistry Development Kit (CDK) - An Open-Source Java Library for Chemo- and Bioinformatics. Curr Pharm Des [Internet]. 2006 Jun 1;12(17):2111–20. Available from: https://cdk.github.io/cdk-paper-2/ doi:[10.2174/138161206777585274](https://doi.org/10.2174/138161206777585274) ([Scholia](https://tools.wmflabs.org/scholia/doi/10.2174/138161206777585274))
+3. <a name="citeref3"></a>Willighagen E, Mayfield JW, Alvarsson J, Berg A, Carlsson L, Jeliazkova N, et al. The Chemistry Development Kit (CDK) v2.0: atom typing, depiction, molecular formulas, and substructure searching. J Cheminform. 2017 Jun 6;9(1).  doi:[10.1186/S13321-017-0220-4](https://doi.org/10.1186/S13321-017-0220-4) ([Scholia](https://tools.wmflabs.org/scholia/doi/10.1186/S13321-017-0220-4))
 
 

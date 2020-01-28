@@ -9,9 +9,12 @@ License: MIT
 
 ## Contents
 
-1. [Introduction](intro.md) <br />
-1.1. [Including Groovy code examples](intro.md#including-groovy-code-examples) <br />
-1.2. [Including references](intro.md#including-references) <br />
-2. [Chapter 2](chapter2.md) <br />
+1. [Core Structures](intro.md) <br />
+2. [Creating CXSMILES](chapter2.md) <br />
+2.1. [Maximal Common Substructure](chapter2.md#maximal-common-substructure) <br />
+2.2. [SDF in, CXSMILES out](chapter2.md#sdf-in,-cxsmiles-out) <br />
+3. [Depiction of CXSMILES](depict.md) <br />
+4. [Enumerating chemical structures for a CXSMILES](enumeration.md) <br />
+4.1. [Filtering by molecular formular](enumeration.md#filtering-by-molecular-formular) <br />
 
 [Index](indexList.md) <br />
