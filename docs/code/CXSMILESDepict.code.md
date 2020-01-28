@@ -15,8 +15,7 @@ sp = new SmilesParser(
   DefaultChemObjectBuilder.getInstance()
 )
 
-mol1 = sp.parseSmiles("C\\C=C\\CC(=O)O")
-sp.parseMolCXSMILES("|Sg:n:0:x:ht,Sg:n:3:y:ht|", mol1)
+mol1 = sp.parseSmiles("C\\C=C\\CC(=O)O |Sg:n:0:x:ht,Sg:n:3:y:ht|")
 new DepictionGenerator()
   .depict(mol1)
   .writeTo("lipids.svg");
