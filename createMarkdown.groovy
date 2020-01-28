@@ -55,8 +55,10 @@ lines.each { String line ->
     srcLines.each { String srcLine -> println srcLine }
   } else if (line.startsWith("<out>")) {
     def instruction = new XmlSlurper().parseText(line)
+    println "```"
     def srcLines = new File("code/${instruction.text()}.out").readLines()
     srcLines.each { String srcLine -> println srcLine }
+    println "```"
   } else if (line.startsWith("<section")) {
     def instruction = new XmlSlurper().parseText(line)
     println "<a name=\"sec:${instruction.@label}\"></a>"

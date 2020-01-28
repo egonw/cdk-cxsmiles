@@ -2,7 +2,7 @@
 
 The CDK supports a subset of CXSMILES only and this chapter should give an overview
 over how far the support goes. Also refer to 
-[this discussing](https://github.com/cdk/depict/issues/7)
+[this discussion](https://github.com/cdk/depict/issues/7)
 between Emma Schymanski and John Mayfield.
 
 ## Parsing CXSMILES

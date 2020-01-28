@@ -29,8 +29,10 @@ for (ac in list) {
 
 For the two given input structures, it finds one overlap:
 
+```
 Overlaps: 1
   atom count in overlap: 13
+```
 
 ## SDF in, CXSMILES out
 
