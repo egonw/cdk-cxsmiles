@@ -1,0 +1,82 @@
+// Copyright (c) 2009-2020  Egon Willighagen <egon.willighagen@gmail.com>
+//
+// GPL v3
+
+import java.io.*;
+import java.util.*;
+
+GROOVY = ".groovyin";
+GROOVYL = ".groovylin";
+
+inFile = args[0];
+
+ending = "in";
+if (inFile.endsWith(GROOVY)) {
+  suffix = GROOVY;
+  templateFile = "source.groovy.template";
+} else if (inFile.endsWith(GROOVYL)) {
+  suffix = GROOVYL;
+  templateFile = "source.groovy.template";
+} else {
+  println "Unsupported processing of ${inFile}"
+  System.exit(-1);
+}
+
+// read the input
+reader = new BufferedReader(
+  new FileReader(new File(inFile))
+);
+imports = new StringBuffer();
+source = new StringBuffer();
+line = reader.readLine();
+while (line != null) {
+  if (line.trim().length() > 0) {
+    if (line.charAt(0) == '#') {
+      code = line.substring(1);
+      if (code.startsWith("import")) {
+        imports.append(code+"\n");
+      } else {
+        source.append(code+"\n");
+      }
+    } else if (line.charAt(0) == '%') {
+      tex.append(line.substring(1)+"\n");
+    } else {
+      if (line.startsWith("import")) {
+        imports.append(line+"\n");
+      } else {
+        source.append(line+"\n");
+      }
+    }
+  }
+  line = reader.readLine();
+}
+
+// create source file
+template = new BufferedReader(
+  new FileReader(new File(templateFile))
+);
+runClass = inFile.substring(0,inFile.indexOf(suffix));
+runExt = suffix.substring(1,suffix.indexOf(ending));
+runFile = runClass + "." + runExt;
+runWriter = new FileWriter(
+  new File(runFile)
+);
+line = template.readLine();
+while (line != null) {
+  if (line.trim().length() > 0) {
+    if (line.contains("%TESTCLASS%")) {
+      line = line.replace("%TESTCLASS%", runClass);
+      runWriter.write(line);
+    } else if (line.contains("%IMPORTS%")) {
+      line = line.replace("%IMPORTS%", imports.toString());
+      runWriter.write(line);
+    } else if (line.contains("%CODE%")) {
+      line = line.replace("%CODE%", source.toString());
+      runWriter.write(line);
+    } else {
+      runWriter.write(line+"\n");
+    }
+  }
+  line = template.readLine();
+}
+runWriter.close();

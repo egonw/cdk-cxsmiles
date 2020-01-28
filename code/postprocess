@@ -1,0 +1,99 @@
+// Copyright (c) 2009-2020  Egon Willighagen <egon.willighagen@gmail.com>
+//
+// GPL v3
+
+import java.io.*;
+import java.util.*;
+
+GROOVY = ".groovy";
+GROOVYL = ".groovyl";
+JAVACLASS = ".class";
+
+inFile = args[0];
+
+if (inFile.endsWith(GROOVY)) {
+  runSuffix = GROOVY;
+  srcSuffix = runSuffix;
+  ending = "in"
+  syntax = "groovy"
+} else if (inFile.endsWith(GROOVYL)) {
+  runSuffix = GROOVYL;
+  srcSuffix = runSuffix;
+  ending = "in"
+  syntax = "groovy"
+} else if (inFile.endsWith(JAVACLASS)) {
+  runSuffix = JAVACLASS;
+  srcSuffix = ".java";
+  ending = "p"
+  syntax = "java"
+} else {
+  println "Unsupported processing of ${inFile}"
+  System.exit(-1);
+}
+
+runClass = inFile.substring(0,inFile.indexOf(runSuffix));
+runExt = runSuffix.substring(1)
+srcExt = srcSuffix.substring(1)
+runFile = runClass + runSuffix;
+srcFile = runClass + srcSuffix
+
+// create Markdown files
+md = new StringBuffer();
+
+// read the input
+reader = new BufferedReader(
+  new FileReader(srcFile + ending)
+);
+line = reader.readLine();
+while (line != null) {
+  if (line.trim().length() > 0) {
+    if (line.charAt(0) == '#') {
+    } else if (line.charAt(0) == '%') {
+      md.append(line.substring(1)+"\n");
+    } else {
+      md.append(line+"\n");
+    }
+  }  
+  line = reader.readLine();
+}
+
+mdTypes = new ArrayList();
+mdTypes.add("verbatim");
+mdTypes.add("code");
+
+for (int type=0; type<mdTypes.size(); type++) {
+  mdFile = runClass + "." + mdTypes.get(type) + ".md";
+  mdWriter = new FileWriter(
+    new File(mdFile)
+  );
+  template = new BufferedReader(
+    new FileReader(new File("md." + mdTypes.get(type) + ".template"))
+  );
+  line = template.readLine();
+  while (line != null) {
+    if (line.length() > 0) {
+      if (line.contains("%MD%")) {
+        line = line.replace("%MD%", md.toString());
+        mdWriter.write(line);
+      } else if (line.contains("%STEM%")) {
+        line = line.replace("%STEM%", runClass);
+        line = line.replace("%EXT%", srcExt);
+        mdWriter.write(line + "\n");
+      } else if (line.contains("%SYNTAX%")) {
+        line = line.replace("%SYNTAX%", syntax);
+        mdWriter.write(line + "\n");
+      } else if (line.contains("%SOURCECODE%")) {
+        def srcLines = new File(srcFile).readLines()
+        srcLines.each { String srcLine -> mdWriter.write(srcLine + "\n") }
+      } else if (line.contains("%OUT%")) {
+        def srcLines = new File(runClass + ".out").readLines()
+        srcLines.each { String srcLine -> mdWriter.write(srcLine + "\n") }
+      } else {
+        mdWriter.write(line + "\n");
+      }
+    }
+    line = template.readLine();
+  }
+  mdWriter.close();
+}
+

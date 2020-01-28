@@ -1,0 +1,8 @@
+*.groovy
+*.groovyl
+*.out
+*.jar
+*.md
+*.java
+*.class
+methane.gin

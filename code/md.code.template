@@ -1,0 +1,13 @@
+# %STEM%.%EXT%
+
+**Source code:**
+
+```%SYNTAX%
+%SOURCECODE%
+```
+
+**Output:**
+
+```plain
+%OUT%
+```
