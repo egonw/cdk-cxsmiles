@@ -1,11 +1,10 @@
-# Template repository for Markdown content with executed Groovy scripts
-
+# CDK CXSMILES
 
 **Egon L. Willighagen**
 
 © 2020 The Authors
 
-License: MIT
+License: CC-BY 4.0 International
 
 ## Contents
 
