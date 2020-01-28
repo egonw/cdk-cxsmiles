@@ -12,3 +12,18 @@ between Emma Schymanski and John Mayfield.
 CXSMILES for lipids can use the `C\C=C\CC(=O)O |Sg:n:0:x:ht,Sg:n:3:y:ht|` syntax.
 We can parse this into a CDK data model with the following code:
 
+**Script** [code/ParseCXSMILES.groovy](code/ParseCXSMILES.code.md)
+```groovy
+sp = new SmilesParser(
+  DefaultChemObjectBuilder.getInstance()
+)
+mol1 = sp.parseSmiles("C\\C=C\\CC(=O)O")
+sp.parseMolCXSMILES("|Sg:n:0:x:ht,Sg:n:3:y:ht|", mol1)
+```
+
+### Positional variations
+
+## References
+
+
+
