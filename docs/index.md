@@ -19,6 +19,6 @@ License: CC-BY 4.0 International
 4. [Depiction of CxSMILES](depict.md) <br />
 4.1. [Groovy code](depict.md#groovy-code) <br />
 5. [Enumerating chemical structures for a CxSMILES](enumeration.md) <br />
-5.1. [Filtering by molecular formular](enumeration.md#filtering-by-molecular-formular) <br />
+5.1. [Filtering by molecular formula](enumeration.md#filtering-by-molecular-formula) <br />
 
 [Index](indexList.md) <br />

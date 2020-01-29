@@ -1,13 +1,13 @@
 # ParseCXSMILES.groovy
 **Source code:**
 ```groovy
+@Grab(group='org.openscience.cdk', module='cdk-smiles', version='2.3')
+@Grab(group='org.openscience.cdk', module='cdk-silent', version='2.3')
+
 import org.openscience.cdk.smiles.SmilesParser;
 import org.openscience.cdk.interfaces.*;
 import org.openscience.cdk.silent.SilentChemObjectBuilder;
 import org.openscience.cdk.isomorphism.UniversalIsomorphismTester;
-@Grab(group='org.openscience.cdk', module='cdk-smiles', version='2.3')
-@Grab(group='org.openscience.cdk', module='cdk-silent', version='2.3')
-
 sp = new SmilesParser(
   SilentChemObjectBuilder.getInstance()
 )
