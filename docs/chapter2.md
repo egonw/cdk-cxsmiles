@@ -1,14 +1,14 @@
-# Creating CXSMILES
+# Creating CxSMILES
 
 This chapter covers the following use case: experiment data has provided
 a short list of possible chemical structures, for example, resulting from
 a database search on <a name="tp1">molecular formula</a> or <a name="tp2">m/z value</a>. Often, the top hits
 of <a name="tp3">posititional isomers</a>, and the wish exists to convert these isomers
-into a Markush structure and represented as CXSMILES.
+into a Markush structure and represented as CxSMILES.
 
 ## Maximal Common Substructure
 
-One step in converting a short list of chemical structures into a CXSMILES
+One step in converting a short list of chemical structures into a CxSMILES
 that represents them is determination of the <a name="tp4">maximal common substructure</a>
 or <a name="tp5">MCS</a>. The code for this would look like this:
 
@@ -16,7 +16,7 @@ or <a name="tp5">MCS</a>. The code for this would look like this:
 ```groovy
 uiTester = new UniversalIsomorphismTester();
 sp = new SmilesParser(
-  DefaultChemObjectBuilder.getInstance()
+  SilentChemObjectBuilder.getInstance()
 )
 mol1 = sp.parseSmiles("NCC(=O)OC1=CC=CC=C1C(=O)O")
 mol2 = sp.parseSmiles("CCC(=O)OC1=CC=CC=C1C(=O)O")
@@ -34,7 +34,7 @@ Overlaps: 1
   atom count in overlap: 13
 ```
 
-## SDF in, CXSMILES out
+## SDF in, CxSMILES out
 
 
 ## References

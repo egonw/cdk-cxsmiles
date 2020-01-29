@@ -3,7 +3,7 @@
 At the Dagstuhl Computation Metabolomics meeting there was a session about core structures.
 The research question here is what the right balance is of representation of multiple
 structures, matching measured data. [ChemAxon exteneded SMILES](https://chemaxon.com/marvin-archive/latest/help/formats/cxsmiles-doc.html),
-or <a name="tp1">CXSMILES</a>, came up as one solution [<a href="#citeref1">1</a>].
+or <a name="tp1">CxSMILES</a>, came up as one solution [<a href="#citeref1">1</a>].
 This repository contains code using the <a name="tp2">Chemistry Development Kit</a> [<a href="#citeref2">2</a>,<a href="#citeref3">3</a>,<a href="#citeref4">4</a>]
 for various tasks around this question. The following chapters discuss these.
 

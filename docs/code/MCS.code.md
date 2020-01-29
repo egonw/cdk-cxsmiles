@@ -3,14 +3,14 @@
 ```groovy
 import org.openscience.cdk.smiles.SmilesParser;
 import org.openscience.cdk.interfaces.*;
-import org.openscience.cdk.DefaultChemObjectBuilder;
+import org.openscience.cdk.silent.SilentChemObjectBuilder;
 import org.openscience.cdk.isomorphism.UniversalIsomorphismTester;
 @Grab(group='org.openscience.cdk', module='cdk-smiles', version='2.3')
-@Grab(group='org.openscience.cdk', module='cdk-data', version='2.3')
+@Grab(group='org.openscience.cdk', module='cdk-silent', version='2.3')
 
 uiTester = new UniversalIsomorphismTester();
 sp = new SmilesParser(
-  DefaultChemObjectBuilder.getInstance()
+  SilentChemObjectBuilder.getInstance()
 )
 mol1 = sp.parseSmiles("NCC(=O)OC1=CC=CC=C1C(=O)O")
 mol2 = sp.parseSmiles("CCC(=O)OC1=CC=CC=C1C(=O)O")
