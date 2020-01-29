@@ -34,6 +34,33 @@ Overlaps: 1
   atom count in overlap: 13
 ```
 
+The resulting MCS can be mapped back to the input structure, and colored
+accordingly:
+
+**Script** [code/APs.groovy](code/APs.code.md)
+```groovy
+uiTester = new UniversalIsomorphismTester();
+sp = new SmilesParser(
+  SilentChemObjectBuilder.getInstance()
+)
+mol1 = sp.parseSmiles("NCC(=O)OC1=CC=CC=C1C(=O)O")
+mol2 = sp.parseSmiles("CCC(=O)OC1=CC=CC=C1C(=O)O")
+List<IAtomContainer> list = uiTester.getOverlaps(mol1, mol2);
+overlap = list[0]
+substructure = mol1.builder.newInstance(IAtomContainer.class)
+maplist = uiTester.getSubgraphAtomsMap(mol1, overlap);
+for (mapping in maplist) { substructure.addAtom(mol1.getAtom(mapping.id1)) }
+new DepictionGenerator()
+  .withHighlight(substructure.atoms(), java.awt.Color.lightGray)
+  .depict(mol1)
+  .writeTo("overlap.svg");
+```
+
+We can then see the common structure in the SMILES, here for the first SMILES
+from the MCS example:
+
+![SVG depiction of the lipds](./images/generated/overlap.svg)
+
 ## SDF in, CxSMILES out
 
 

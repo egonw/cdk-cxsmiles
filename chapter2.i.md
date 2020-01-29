@@ -18,6 +18,16 @@ For the two given input structures, it finds one overlap:
 
 <out>MCS</out>
 
+The resulting MCS can be mapped back to the input structure, and colored
+accordingly:
+
+<code>APs</code>
+
+We can then see the common structure in the SMILES, here for the first SMILES
+from the MCS example:
+
+![SVG depiction of the lipds](./images/generated/overlap.svg)
+
 ## SDF in, CxSMILES out
 
 
