@@ -33,19 +33,11 @@ while (line != null) {
   if (line.trim().length() > 0) {
     if (line.charAt(0) == '#') {
       code = line.substring(1);
-      if (code.startsWith("import")) {
-        imports.append(code+"\n");
-      } else {
-        source.append(code+"\n");
-      }
+      source.append(code+"\n");
     } else if (line.charAt(0) == '%') {
       tex.append(line.substring(1)+"\n");
     } else {
-      if (line.startsWith("import")) {
-        imports.append(line+"\n");
-      } else {
-        source.append(line+"\n");
-      }
+      source.append(line+"\n");
     }
   }
   line = reader.readLine();
@@ -66,9 +58,6 @@ while (line != null) {
   if (line.trim().length() > 0) {
     if (line.contains("%TESTCLASS%")) {
       line = line.replace("%TESTCLASS%", runClass);
-      runWriter.write(line);
-    } else if (line.contains("%IMPORTS%")) {
-      line = line.replace("%IMPORTS%", imports.toString());
       runWriter.write(line);
     } else if (line.contains("%CODE%")) {
       line = line.replace("%CODE%", source.toString());
