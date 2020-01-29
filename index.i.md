@@ -1,4 +1,4 @@
-# CDK CXSMILES
+# CDK CxSMILES
 
 **Egon L. Willighagen**
 

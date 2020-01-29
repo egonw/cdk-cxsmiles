@@ -1,4 +1,4 @@
-# Enumerating chemical structures for a CXSMILES
+# Enumerating chemical structures for a CxSMILES
 
 ## Filtering by molecular formular
 
