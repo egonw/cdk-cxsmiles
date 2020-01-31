@@ -17,9 +17,9 @@
 #mol1 = sp.parseSmiles("NCC(=O)OC1=CC=CC=C1C(=O)O")
 #mol2 = sp.parseSmiles("CCC(=O)OC1=CC=CC=C1C(=O)O")
 #
-List<IAtomContainer> list = uiTester.getOverlaps(mol1, mol2);
+#List<IAtomContainer> list = uiTester.getOverlaps(mol1, mol2);
+#overlap = list[0]
 
-overlap = list[0]
 substructure = mol1.builder.newInstance(IAtomContainer.class)
 substructureAtoms = new java.util.HashSet<IAtom>()
 

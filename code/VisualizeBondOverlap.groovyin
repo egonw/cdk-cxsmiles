@@ -2,7 +2,6 @@
 #@Grab(group='org.openscience.cdk', module='cdk-silent', version='2.3')
 #@Grab(group='org.openscience.cdk', module='cdk-depict', version='2.3')
 #
-#import org.openscience.cdk.smiles.SmilesGenerator;
 #import org.openscience.cdk.smiles.SmilesParser;
 #import org.openscience.cdk.interfaces.*;
 #import org.openscience.cdk.silent.SilentChemObjectBuilder;
@@ -26,30 +25,23 @@ substructureAtoms = new java.util.HashSet<IAtom>()
 maplist = uiTester.getSubgraphAtomsMap(mol1, overlap);
 for (mapping in maplist) {
   mol1Atom = mol1.getAtom(mapping.id1)
+  substructure.addAtom(mol1Atom)
   substructureAtoms.add(mol1Atom)
 }
 for (bond in mol1.bonds()) {
-  allCheckedAtomsInSubstructure = true
+  allCheckedBondsInSubstructure = true
   for (bondAtom in bond.atoms()) {
     if (substructureAtoms.contains(bondAtom)) {
-      atLeastOneAtomInSubstructure = true
+      allCheckedBondsInSubstructure = false
     } else {
-      allCheckedAtomsInSubstructure = false
+      atLeastOneAtomInSubstructure = true
     }
   }
-  if (allCheckedAtomsInSubstructure) {
-    // this is a bond in the substructure
-    for (bondAtom in bond.atoms())
-      if (!substructure.contains(bondAtom))
-        substructure.addAtom(bondAtom)
+  if (allCheckedBondsInSubstructure)
     substructure.addBond(bond)
-  } else if (atLeastOneAtomInSubstructure) {
-    // this is an attachment point
-  } else {
-    // this is a bond in an R group
-  }
 }
 
-sg = SmilesGenerator.isomeric();
-println "core structure:"
-println "" + sg.create(substructure)
+#new DepictionGenerator()
+#  .withHighlight(substructure.bonds(), java.awt.Color.lightGray)
+#  .depict(mol1)
+#  .writeTo("overlapBonds.svg");
