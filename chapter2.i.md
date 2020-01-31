@@ -26,7 +26,7 @@ accordingly:
 We can then see the common structure in the SMILES, here for the first SMILES
 from the MCS example:
 
-![SVG depiction of the lipds](./images/generated/overlap.svg)
+<img src="./images/generated/overlap.svg" width="400" alt="Depicting of overlap of two structures" />
 
 ## SDF in, CxSMILES out
 
