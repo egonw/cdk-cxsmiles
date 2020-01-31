@@ -39,12 +39,6 @@ accordingly:
 
 **Script** [code/APs.groovy](code/APs.code.md)
 ```groovy
-uiTester = new UniversalIsomorphismTester();
-sp = new SmilesParser(
-  SilentChemObjectBuilder.getInstance()
-)
-mol1 = sp.parseSmiles("NCC(=O)OC1=CC=CC=C1C(=O)O")
-mol2 = sp.parseSmiles("CCC(=O)OC1=CC=CC=C1C(=O)O")
 List<IAtomContainer> list = uiTester.getOverlaps(mol1, mol2);
 overlap = list[0]
 substructure = mol1.builder.newInstance(IAtomContainer.class)
