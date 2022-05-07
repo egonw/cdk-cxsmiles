@@ -1,5 +1,6 @@
 intro
 parsing
+templates
 chapter2
 depict
 enumeration

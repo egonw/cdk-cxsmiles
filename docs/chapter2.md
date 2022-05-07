@@ -9,7 +9,8 @@ into a Markush structure and represented as CxSMILES.
 Creating the CxSMILES contains of a few steps:
 
 1. we need to establish the core structure
-2. we need to estblish the side chains
+2. we need to determine the side chains
+3. we need to indicate where the side chains can link to the core structure
 
 ## Step 1: the core structure
 

@@ -1,7 +1,7 @@
 SOURCES := intro.i.md index.i.md chapter2.i.md depict.i.md enumeration.i.md \
-           parsing.i.md
+           parsing.i.md templates.i.md
 TARGETS := intro.md indexList.md chapter2.md depict.md enumeration.md \
-           parsing.md
+           parsing.md templates.md
 METAS := references.dat toc.txt indexList.i.md sections.txt
 
 SUBDIRS := code

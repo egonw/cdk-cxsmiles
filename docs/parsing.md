@@ -7,8 +7,6 @@ between Emma Schymanski and John Mayfield.
 
 ## Parsing CxSMILES
 
-### Lipids
-
 CxSMILES for lipids can use the `[H]C\C=C\CC(=O)O |Sg:n:1:x:ht,Sg:n:4:y:ht|` syntax.
 We can parse this into a CDK data model with the regular approach:
 
@@ -20,7 +18,8 @@ sp = new SmilesParser(
 mol1 = sp.parseSmiles("[H]C\\C=C\\CC(=O)O |Sg:n:1:x:ht,Sg:n:4:y:ht|")
 ```
 
-### Positional variations
+## The internal graph model
+
 
 ## References
 
