@@ -5,4 +5,6 @@ sections.txt
 sparql/*.out
 toc.txt
 topics.tsv
-
+node_modules/
+package-lock.json
+package.json
