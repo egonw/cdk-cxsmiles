@@ -10,6 +10,7 @@ all: ${SUBDIRS} ${METAS} ${TARGETS} index.md
 	@mkdir -p docs/code/
 	@mv ${TARGETS} docs/
 	@cp code/*.code.md docs/code/
+	@cp images/generated/*svg docs/images/generated/
 
 sections.txt: order.txt ${SOURCES}
 	@echo "Indexing the sections"
