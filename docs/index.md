@@ -23,6 +23,7 @@ there were sessions about core structures, structure identity certainty, and ide
 3.1. [Lipids](templates.md#lipids) <br />
 3.1.1. [Lipids with a double bond somewhere in the tail](templates.md#lipids-with-a-double-bond-somewhere-in-the-tail) <br />
 3.2. [Positional uncertainty](templates.md#positional-uncertainty) <br />
+3.3. [Polymers](templates.md#polymers) <br />
 4. [Creating CxSMILES](chapter2.md) <br />
 4.1. [Step 1: the core structure](chapter2.md#step-1:-the-core-structure) <br />
 4.2. [Step 2: the side chains](chapter2.md#step-2:-the-side-chains) <br />

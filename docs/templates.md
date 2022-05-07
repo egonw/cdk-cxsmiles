@@ -15,3 +15,13 @@ know the location of the double bond, we can use a CxSMILES like
 ## Positional uncertainty
 
 
+## Polymers
+
+Polymers can be defined as a repeating unit started with `Sg:n:` followed by the
+atom indices (starting at 0) of the atoms in the monomer unit: `[*]c1Nc(cc1)c1Nc(cc1)[*] |Sg:n:1,2,3,4,5,6,7,8,9,10::ht|`.
+This gives:
+
+<img src="./images/generated/polymer.svg" width="400" alt="SVG depiction of a polymer as a repeating monomer" />
+```
+```
+
