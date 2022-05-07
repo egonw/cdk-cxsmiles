@@ -2,6 +2,8 @@
 //
 // GPL v3
 
+import groovy.xml.XmlSlurper
+
 input = args[0]
 
 bibliography = new HashMap<String,String>();

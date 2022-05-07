@@ -6,6 +6,8 @@
 //
 // it takes one optional argument, which is appended to the output
 
+import groovy.xml.XmlSlurper
+
 def chapterCounter = 0
 
 chapters = "order.txt"
