@@ -2,7 +2,7 @@
 
 **Egon L. Willighagen**
 
-© 2020 The Authors
+© 2020-2022 The Authors
 
 License: CC-BY 4.0 International
 
