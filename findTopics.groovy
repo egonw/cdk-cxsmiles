@@ -6,6 +6,8 @@
 //
 // it takes one optional argument, which is appended to the output
 
+import groovy.xml.XmlSlurper
+
 if (args.length == 0) {
   println "groovy findTopics.groovy <directory>"
   System.exit(0)
