@@ -8,7 +8,8 @@ between Emma Schymanski and John Mayfield.
 ## Parsing CxSMILES
 
 CxSMILES for lipids can use the `[H]C\C=C\CC(=O)O |Sg:n:1:x:ht,Sg:n:4:y:ht|` syntax.
-We can parse this into a CDK data model with the regular approach:
+We can parse this into a CDK data model with the regular approach. In Groovy this
+looks like this:
 
 **Script** [code/ParseCXSMILES.groovy](code/ParseCXSMILES.code.md)
 ```groovy
@@ -18,10 +19,27 @@ sp = new SmilesParser(
 mol1 = sp.parseSmiles("[H]C\\C=C\\CC(=O)O |Sg:n:1:x:ht,Sg:n:4:y:ht|")
 ```
 
+However, we can also use [pybacting]() and parse the CxSMILES with Bacting [<a href="#citeref1">1</a>]
+(which uses the CDK in turn) in Python:
+
+```python
+from pybacting import cdk
+from scyjava import to_python as j2p
+import IPython
+
+cxmol = cdk.fromSMILES("[H]C\\C=C\\CC(=O)O |Sg:n:1:x:ht,Sg:n:4:y:ht| x+y=17")
+svg = j2p(cdk.asSVG(cxmol))
+display(IPython.display.SVG(svg))
+```
+
+We can even open this as a Jupyter Notebook in
+[Google Colab]([Open in Google Colab](https://colab.research.google.com/github/egonw/cdk-cxsmiles/blob/master/nb/parseCxSMILES.ipynb)).
+
 ## The internal graph model
 
 
 ## References
 
+1. <a name="citeref1"></a>Willighagen E. Bacting: a next generation, command line version of Bioclipse. JOSS. 2021 Jun 23;6(62):2558.  doi:[10.21105/JOSS.02558](https://doi.org/10.21105/JOSS.02558) ([Scholia](https://scholia.toolforge.org/doi/10.21105/JOSS.02558))
 
 

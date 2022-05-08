@@ -13,7 +13,7 @@ looks like this:
 
 <code>ParseCXSMILES</code>
 
-However, we can also use [pybacting]() and parse the CxSMILES with Bacting
+However, we can also use [pybacting]() and parse the CxSMILES with Bacting [<cite>Q107332190</cite>]
 (which uses the CDK in turn) in Python:
 
 ```python

@@ -13,6 +13,13 @@ At the Dagstuhl Computation Metabolomics meeting in
 <a href="https://www.dagstuhl.de/en/program/calendar/semhp/?semnr=22181">2022</a>
 there were sessions about core structures, structure identity certainty, and identification.
 
+## Acknowledgments
+
+We thank everyone who contributed to the discussions at the two Computation Metabolomics meetings.
+In 2020 this was Marcus Ludwig, Steffen Neumann, and others, and in 2022 this was
+Soha Hassoun, Roman Bushuiev, Louis-Felix Nothias, Sebastian Böcker, Justin van der Hooft, and
+Adriano Rutz.
+
 ## Contents
 
 1. [Introduction](intro.md) <br />
@@ -23,6 +30,7 @@ there were sessions about core structures, structure identity certainty, and ide
 3. [Classes of compounds and where to find a CxSMILES](templates.md) <br />
 3.1. [Lipids](templates.md#lipids) <br />
 3.1.1. [Lipids with a double bond somewhere in the tail](templates.md#lipids-with-a-double-bond-somewhere-in-the-tail) <br />
+3.1.2. [Lipids with two tails](templates.md#lipids-with-two-tails) <br />
 3.2. [Positional uncertainty](templates.md#positional-uncertainty) <br />
 3.3. [Polymers](templates.md#polymers) <br />
 4. [Creating CxSMILES](chapter2.md) <br />
