@@ -13,6 +13,13 @@ At the Dagstuhl Computation Metabolomics meeting in
 <a href="https://www.dagstuhl.de/en/program/calendar/semhp/?semnr=22181">2022</a>
 there were sessions about core structures, structure identity certainty, and identification.
 
+## Acknowledgments
+
+We thank everyone who contributed to the discussions at the two Computation Metabolomics meetings.
+In 2020 this was Marcus Ludwig, Steffen Neumann, and others, and in 2022 this was
+Soha Hassoun, Roman Bushuiev, Louis-Felix Nothias, Sebastian Böcker, Justin van der Hooft, and
+Adriano Rutz.
+
 ## Contents
 
 <toc>toc.txt</toc>
