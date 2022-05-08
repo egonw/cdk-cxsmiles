@@ -9,13 +9,14 @@ License: CC-BY 4.0 International
 ## Origin
 
 At the Dagstuhl Computation Metabolomics meeting in
-<a href="https://www.dagstuhl.de/en/program/calendar/semhp/?semnr=20051">2020</a> and
+<a href="https://www.dagstuhl.de/en/program/calendar/semhp/?semnr=20051">2020</a> [<a href="#citeref1">1</a>] and
 <a href="https://www.dagstuhl.de/en/program/calendar/semhp/?semnr=22181">2022</a>
 there were sessions about core structures, structure identity certainty, and identification.
 
 ## Contents
 
 1. [Introduction](intro.md) <br />
+1.1. [CxSMILES in Wikidata](intro.md#cxsmiles-in-wikidata) <br />
 2. [CxSMILES in the CDK](parsing.md) <br />
 2.1. [Parsing CxSMILES](parsing.md#parsing-cxsmiles) <br />
 2.2. [The internal graph model](parsing.md#the-internal-graph-model) <br />
@@ -34,3 +35,8 @@ there were sessions about core structures, structure identity certainty, and ide
 6.1. [Filtering by molecular formula](enumeration.md#filtering-by-molecular-formula) <br />
 
 [Index](indexList.md) <br />
+
+## References
+
+1. <a name="citeref1"></a>Ludwig M, Neumann S, Willighagen E. Cheminformatics for Users. In: Computational Metabolomics: From Cheminformatics to Machine Learning (Dagstuhl Seminar 20051). 2020. 
+

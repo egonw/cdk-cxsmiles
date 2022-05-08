@@ -4,7 +4,7 @@
 
 ### Lipids with a double bond somewhere in the tail
 
-If we have a single tail lipid with `x+y+2` carbons in the tail but we do not
+If we have a single tail <a name="tp1">lipid</a> with `x+y+2` carbons in the tail but we do not
 know the location of the double bond, we can use a CxSMILES like
 `[H]C\\C=C\\CC(=O)O |Sg:n:1:x:ht,Sg:n:4:y:ht| x+y=17`:
 
@@ -14,12 +14,20 @@ know the location of the double bond, we can use a CxSMILES like
 
 ## Positional uncertainty
 
+When it is knows that, for example, a ring has a hydrogen replace by another atom
+but the exact <a name="tp2">position</a> is not known, CxSMILES allows you to indicate what the possible
+locations are. For example, monochlorobiphenyl can be represented with the
+CxSMILES `Cl*.c1ccccc1-c1ccccc1 |m:1:3.4.5.6.7.8.9|`:
+
+<img src="./images/generated/monochlorobiphenyl.svg" width="400" alt="SVG depiction of biphenyl with a single chloride atom at an unknown position" />
+```
+```
 
 ## Polymers
 
 Polymers can be defined as a repeating unit started with `Sg:n:` followed by the
-atom indices (starting at 0) of the atoms in the monomer unit: `[*]c1Nc(cc1)c1Nc(cc1)[*] |Sg:n:1,2,3,4,5,6,7,8,9,10::ht|`.
-This gives:
+atom indices (starting at 0) of the atoms in the <a name="tp3">monomer</a> unit: `[*]c1Nc(cc1)c1Nc(cc1)[*] |Sg:n:1,2,3,4,5,6,7,8,9,10::ht|`.
+This gives this <a name="tp4">polymer</a> template:
 
 <img src="./images/generated/polymer.svg" width="400" alt="SVG depiction of a polymer as a repeating monomer" />
 ```
