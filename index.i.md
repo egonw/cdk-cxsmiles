@@ -16,7 +16,8 @@ there were sessions about core structures, structure identity certainty, and ide
 ## Acknowledgments
 
 We thank everyone who contributed to the discussions at the two Computation Metabolomics meetings.
-In 2020 this was Marcus Ludwig, Steffen Neumann, and others, and in 2022 this was
+In 2020 this was Marcus Ludwig, Steffen Neumann, Michael Witting, Marcus Ludwig, Corey Broeckling,
+Laurent Gatto, Xiuxia Du, Alexis Delabriere, Jan Lisec, and Andrea Brunner, and in 2022 this was
 Soha Hassoun, Roman Bushuiev, Louis-Felix Nothias, Sebastian Böcker, Justin van der Hooft, and
 Adriano Rutz.
 
