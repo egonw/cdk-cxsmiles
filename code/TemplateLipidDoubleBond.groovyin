@@ -13,8 +13,9 @@
 #)
 #
 lipid = sp.parseSmiles(
-  "[H]C\\C=C\\CC(=O)O |Sg:n:1:x:ht,Sg:n:4:y:ht| x+y=17"
+  "[H]C\\C=C\\CC(=O)O |Sg:n:1:x:ht,Sg:n:4:y:ht| x+y=15"
 )
 #new DepictionGenerator()
+#  .withMolTitle()
 #  .depict(lipid)
 #  .writeTo("lipid_doublebond.svg");
