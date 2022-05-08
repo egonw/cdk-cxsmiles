@@ -14,7 +14,7 @@ know the location of the double bond, we can use a CxSMILES like
 ### Lipids with two tails
 
 Sometimes experimental data does not provide enough information to decide how long
-the individual tails are, but only provide the total length. Then a template like
+the individual <topic>lipid tails</topic> are, but only provide the total length. Then a template like
 `OCC(OC(=O)C[H])COC(=O)C[H] |Sg:n:6:x:ht,Sg:n:12:y:ht| x+y=28` can be useful:
 
 <img src="./images/generated/lipid_twotail.svg" width="400" alt="SVG depiction of a lipid with two tails" />
