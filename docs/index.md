@@ -26,6 +26,9 @@ Adriano Rutz.
 1.1. [CxSMILES in Wikidata](intro.md#cxsmiles-in-wikidata) <br />
 2. [CxSMILES in the CDK](parsing.md) <br />
 2.1. [Parsing CxSMILES](parsing.md#parsing-cxsmiles) <br />
+2.1.1. [Groovy](parsing.md#groovy) <br />
+2.1.2. [Python](parsing.md#python) <br />
+2.1.3. [CDKDepict](parsing.md#cdkdepict) <br />
 2.2. [The internal graph model](parsing.md#the-internal-graph-model) <br />
 3. [Classes of compounds and where to find a CxSMILES](templates.md) <br />
 3.1. [Lipids](templates.md#lipids) <br />
