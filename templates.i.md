@@ -13,6 +13,13 @@ know the location of the double bond, we can use a CxSMILES like
 
 ## Positional uncertainty
 
+When it is knows that, for example, a ring has a hydrogen replace by another atom
+but the exact position is not known, CxSMILES allows you to indicate what the possible
+locations are. For example, monochlorobiphenyl can be represented with the
+CxSMILES `Cl*.c1ccccc1-c1ccccc1 |m:1:3.4.5.6.7.8.9|`:
+
+<img src="./images/generated/monochlorobiphenyl.svg" width="400" alt="SVG depiction of biphenyl with a single chloride atom at an unknown position" />
+<out>TemplateMonobiphenyl</out>
 
 ## Polymers
 
