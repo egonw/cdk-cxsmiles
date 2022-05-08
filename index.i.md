@@ -19,7 +19,7 @@ We thank everyone who contributed to the discussions at the two Computation Meta
 In 2020 this was Marcus Ludwig, Steffen Neumann, Michael Witting, Marcus Ludwig, Corey Broeckling,
 Laurent Gatto, Xiuxia Du, Alexis Delabriere, Jan Lisec, and Andrea Brunner, and in 2022 this was
 Soha Hassoun, Roman Bushuiev, Louis-Felix Nothias, Sebastian Böcker, Justin van der Hooft, and
-Adriano Rutz.
+Adriano Rutz. Also thanks to Emma Schymanski, John Mayfield, and Carolin Huber for online replies.
 
 ## Contents
 
