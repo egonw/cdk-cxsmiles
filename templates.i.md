@@ -19,7 +19,7 @@ know the location of the double bonds, we can use a CxSMILES like
 `[H]CC=CCC=CCC(=O)O |Sg:n:1:x:ht,Sg:n:4:y:ht,Sg:n:7:z:ht| x+y+z=15`:
 
 <img src="./images/generated/lipid_two_doublebonds.svg" width="400" alt="SVG depiction of a lipid with two double bonds in the tail at unclear position and E/Z uncertainty" />
-<out>TemplateLipidTwoDoubleBond</out>
+<out>TemplateLipidTwoDoubleBonds</out>
 
 ### Lipids with two tails
 
