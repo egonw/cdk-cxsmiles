@@ -19,7 +19,7 @@ know the location of the double bonds, we can use a CxSMILES like
 `[H]CC=CCC=CCC(=O)O |Sg:n:1:x:ht,Sg:n:4:y:ht,Sg:n:7:z:ht| x+y+z=15`:
 
 <img src="./images/generated/lipid_two_doublebonds.svg" width="400" alt="SVG depiction of a lipid with two double bonds in the tail at unclear position and E/Z uncertainty" />
-<out>TemplateLipidDoubleBond</out>
+<out>TemplateLipidTwoDoubleBond</out>
 
 ### Lipids with two tails
 
@@ -39,6 +39,13 @@ CxSMILES `Cl*.c1ccccc1-c1ccccc1 |m:1:3.4.5.6.7.8.9|`:
 
 <img src="./images/generated/monochlorobiphenyl.svg" width="400" alt="SVG depiction of biphenyl with a single chloride atom at an unknown position" />
 <out>TemplateMonobiphenyl</out>
+
+### Flavonoid 
+
+Or for a flavonoid with known number of hydroxy groups on each rings, but with position uncertainty:
+`O*.O*.C1=C(C(=C2C(=C1)OC(=CC2=O)C3=CC(=C(C=C3)))).O* |m:3:4.5,m:1:8.9,m:22:18.19|`
+<img src="./images/generated/flavonoid.svg" width="400" alt="SVG depiction of flavonoid with known hydroxy groups on each cycles but position uncertainty" />
+<out>TemplateFlavonoid</out>
 
 ## Polymers
 
