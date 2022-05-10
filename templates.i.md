@@ -11,6 +11,16 @@ know the location of the double bond, we can use a CxSMILES like
 <img src="./images/generated/lipid_doublebond.svg" width="400" alt="SVG depiction of a lipid with a double bond in the tail at unclear position" />
 <out>TemplateLipidDoubleBond</out>
 
+
+### Lipids with two double bonds somewhere in the tail
+
+If we have a single tail <topic>lipid</topic> with `x+y+z+4` carbons in the tail but we do not
+know the location of the double bonds, we can use a CxSMILES like
+`[H]CC=CCC=CCC(=O)O |Sg:n:1:x:ht,Sg:n:4:y:ht,Sg:n:7:z:ht| x+y+z=15`:
+
+<img src="./images/generated/lipid_two_doublebonds.svg" width="400" alt="SVG depiction of a lipid with two double bonds in the tail at unclear position and E/Z uncertainty" />
+<out>TemplateLipidDoubleBond</out>
+
 ### Lipids with two tails
 
 Sometimes experimental data does not provide enough information to decide how long
