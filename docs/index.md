@@ -1,6 +1,6 @@
 # CDK CxSMILES
 
-**Egon L. Willighagen**
+**Egon L. Willighagen, Adriano Rutz**
 
 © 2020-2022 The Authors
 
@@ -34,8 +34,10 @@ Adriano Rutz. Also thanks to Emma Schymanski, John Mayfield, and Carolin Huber f
 3. [Classes of compounds and where to find a CxSMILES](templates.md) <br />
 3.1. [Lipids](templates.md#lipids) <br />
 3.1.1. [Lipids with a double bond somewhere in the tail](templates.md#lipids-with-a-double-bond-somewhere-in-the-tail) <br />
-3.1.2. [Lipids with two tails](templates.md#lipids-with-two-tails) <br />
+3.1.2. [Lipids with two double bonds somewhere in the tail](templates.md#lipids-with-two-double-bonds-somewhere-in-the-tail) <br />
+3.1.3. [Lipids with two tails](templates.md#lipids-with-two-tails) <br />
 3.2. [Positional uncertainty](templates.md#positional-uncertainty) <br />
+3.2.1. [Flavonoid](templates.md#flavonoid) <br />
 3.3. [Polymers](templates.md#polymers) <br />
 4. [Creating CxSMILES](chapter2.md) <br />
 4.1. [Step 1: the core structure](chapter2.md#step-1:-the-core-structure) <br />

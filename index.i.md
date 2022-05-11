@@ -1,6 +1,6 @@
 # CDK CxSMILES
 
-**Egon L. Willighagen**
+**Egon L. Willighagen, Adriano Rutz**
 
 © 2020-2022 The Authors
 
