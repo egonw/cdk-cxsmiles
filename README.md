@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/236731502.svg)](https://zenodo.org/badge/latestdoi/236731502)
+
 # Dagstuhl CXSMILES 
 
 Repository to capture the work done is CXSMILES to support metabolite identification.
