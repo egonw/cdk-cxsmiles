@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: Willighagen
+    given-names: Egon
+    orcid: https://orcid.org/0000-0001-7542-0286
+  - family-names: Rutz
+    given-names: Adriano
+    orcid: https://orcid.org/0000-0003-0443-9902
+title: CDK CxSMILES
+version: 0.1
+date-released: 2022-10-09
+url: "https://github.com/egonw/cdk-cxsmiles"
