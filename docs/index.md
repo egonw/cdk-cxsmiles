@@ -32,13 +32,14 @@ Adriano Rutz. Also thanks to Emma Schymanski, John Mayfield, and Carolin Huber f
 2.1.3. [CDKDepict](parsing.md#cdkdepict) <br />
 2.2. [The internal graph model](parsing.md#the-internal-graph-model) <br />
 3. [Classes of compounds and where to find a CxSMILES](templates.md) <br />
-3.1. [Lipids](templates.md#lipids) <br />
-3.1.1. [Lipids with a double bond somewhere in the tail](templates.md#lipids-with-a-double-bond-somewhere-in-the-tail) <br />
-3.1.2. [Lipids with two double bonds somewhere in the tail](templates.md#lipids-with-two-double-bonds-somewhere-in-the-tail) <br />
-3.1.3. [Lipids with two tails](templates.md#lipids-with-two-tails) <br />
-3.2. [Positional uncertainty](templates.md#positional-uncertainty) <br />
-3.2.1. [Flavonoid](templates.md#flavonoid) <br />
-3.3. [Polymers](templates.md#polymers) <br />
+3.1. [R-groups](templates.md#r-groups) <br />
+3.2. [Lipids](templates.md#lipids) <br />
+3.2.1. [Lipids with a double bond somewhere in the tail](templates.md#lipids-with-a-double-bond-somewhere-in-the-tail) <br />
+3.2.2. [Lipids with two double bonds somewhere in the tail](templates.md#lipids-with-two-double-bonds-somewhere-in-the-tail) <br />
+3.2.3. [Lipids with two tails](templates.md#lipids-with-two-tails) <br />
+3.3. [Positional uncertainty](templates.md#positional-uncertainty) <br />
+3.3.1. [Flavonoid](templates.md#flavonoid) <br />
+3.4. [Polymers](templates.md#polymers) <br />
 4. [Creating CxSMILES](chapter2.md) <br />
 4.1. [Step 1: the core structure](chapter2.md#step-1:-the-core-structure) <br />
 4.2. [Step 2: the side chains](chapter2.md#step-2:-the-side-chains) <br />
