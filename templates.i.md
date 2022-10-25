@@ -1,5 +1,15 @@
 # Classes of compounds and where to find a CxSMILES
 
+## R-groups
+
+A common application of CXSMILES is the use of <topic>R-groups</topic>.
+This is done with the following CXSMILES pattern like
+`[NH3+]CCOP([O-])(=O)OC[C@@H](CO\C=C/[*])OC([*])=O |$;;;;;;;;;;;;;;R;;;R$|`:
+
+<img src="./images/generated/rgroup.svg" width="400" alt="SVG depiction of a compound with two R-groups." />
+<out>RGroup</out>
+
+
 ## Lipids
 
 ### Lipids with a double bond somewhere in the tail
