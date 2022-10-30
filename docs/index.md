@@ -25,6 +25,7 @@ Adriano Rutz. Also thanks to Emma Schymanski, John Mayfield, and Carolin Huber f
 
 1. [Introduction](intro.md) <br />
 1.1. [CxSMILES in Wikidata](intro.md#cxsmiles-in-wikidata) <br />
+1.2. [CDKDepict Gadget](intro.md#cdkdepict-gadget) <br />
 2. [CxSMILES in the CDK](parsing.md) <br />
 2.1. [Parsing CxSMILES](parsing.md#parsing-cxsmiles) <br />
 2.1.1. [Groovy](parsing.md#groovy) <br />

@@ -17,6 +17,13 @@ At the time of writing, it is mostly [used for polymers and groups of compounds]
 The SPARQL query [https://w.wiki/58rF](https://w.wiki/58rF) returns a list of Wikidata items with a
 CxSMILES value.
 
+## CDKDepict Gadget
+
+There is a [CDKDepict Gadget](https://www.wikidata.org/wiki/User:Egon_Willighagen/cdkdepict_gadget.js) available for Wikidata that will change the Wikidata
+interface and depict the CXSMILES:
+
+<img src="./images/cdkdepict_wikidata.png" width="400" alt="Screenshot of the CDKDepict Gadget entry." />
+
 ## References
 
 <references/>

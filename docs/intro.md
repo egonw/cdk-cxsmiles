@@ -17,6 +17,13 @@ At the time of writing, it is mostly [used for polymers and groups of compounds]
 The SPARQL query [https://w.wiki/58rF](https://w.wiki/58rF) returns a list of Wikidata items with a
 CxSMILES value.
 
+## CDKDepict Gadget
+
+There is a [CDKDepict Gadget](https://www.wikidata.org/wiki/User:Egon_Willighagen/cdkdepict_gadget.js) available for Wikidata that will change the Wikidata
+interface and depict the CXSMILES:
+
+<img src="./images/cdkdepict_wikidata.png" width="400" alt="Screenshot of the CDKDepict Gadget entry." />
+
 ## References
 
 1. <a name="citeref1"></a>Alexandrov T, Böcker S, Dorrestein P, Schymanski E. Computational Metabolomics: Identification, Interpretation, Imaging (Dagstuhl Seminar 17491). 2018.  doi:[10.4230/DAGREP.7.12.1](https://doi.org/10.4230/DAGREP.7.12.1) ([Scholia](https://scholia.toolforge.org/doi/10.4230/DAGREP.7.12.1))
