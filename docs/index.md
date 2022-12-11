@@ -8,9 +8,9 @@ License: CC-BY 4.0 International
 
 ## Origin
 
-At the Dagstuhl Computation Metabolomics meeting in
+At the Dagstuhl Computation Metabolomics meetings in
 <a href="https://www.dagstuhl.de/en/program/calendar/semhp/?semnr=20051">2020</a> [<a href="#citeref1">1</a>] and
-<a href="https://www.dagstuhl.de/en/program/calendar/semhp/?semnr=22181">2022</a>
+<a href="https://www.dagstuhl.de/en/program/calendar/semhp/?semnr=22181">2022</a> [<a href="#citeref2">2</a>]
 there were sessions about core structures, structure identity certainty, and identification.
 
 ## Acknowledgments
@@ -55,4 +55,5 @@ Adriano Rutz. Also thanks to Emma Schymanski, John Mayfield, and Carolin Huber f
 ## References
 
 1. <a name="citeref1"></a>Ludwig M, Neumann S, Willighagen E. Cheminformatics for Users. In: Computational Metabolomics: From Cheminformatics to Machine Learning (Dagstuhl Seminar 20051). 2020. 
+2. <a name="citeref2"></a>Broeckling C, Ebbels T, Mathé E, Zamboni N, Wieder C. Computational Metabolomics: From Spectra to Knowledge (Dagstuhl Seminar 22181) [Internet]. Vol. 12, Dagstuhl reports. 2022. 16 p. Available from: https://drops.dagstuhl.de/opus/volltexte/2022/17441/pdf/dagrep_v012_i005_p001_22181.pdf doi:[10.4230/DAGREP.12.5.1](https://doi.org/10.4230/DAGREP.12.5.1) ([Scholia](https://scholia.toolforge.org/doi/10.4230/DAGREP.12.5.1))
 
