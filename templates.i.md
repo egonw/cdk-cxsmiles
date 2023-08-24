@@ -66,3 +66,12 @@ This gives this <topic>polymer</topic> template:
 <img src="./images/generated/polymer.svg" width="400" alt="SVG depiction of a polymer as a repeating monomer" />
 <out>TemplatePolymer</out>
 
+### Co-polymers
+
+Similarly, co-polymers can be represented with something like, here a block polymer:
+`[*]C(=O)CC(C)OC(=O)CC(CC)O[*] |Sg:n:1,2,3,4,5,6:m:ht,Sg:n:7,8,9,10,11,12,13:n:ht|`:
+
+<img src="./images/generated/copolymer.svg" width="400" alt="SVG depiction of a block co-polymer as a repeating monomer" />
+<out>TemplateCopolymer</out>
+
+Wikidata has multiple CXSMILES for polynmers. You can list these with [this SPARQL query](https://w.wiki/7JTv).
