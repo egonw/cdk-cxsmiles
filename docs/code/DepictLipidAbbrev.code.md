@@ -65,6 +65,7 @@ sp = new SmilesParser(
 cxsmiles = LMAbbrevTool.cxsmiles("CE 16:1")
 mol1 = sp.parseSmiles(cxsmiles)
 new DepictionGenerator()
+  .withMolTitle()
   .depict(mol1)
   .writeTo("CE_16:1.svg");
 ```
