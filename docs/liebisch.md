@@ -19,6 +19,26 @@ The output looks like this:
 
 <img src="./images/generated/CE_16:1.svg" width="400" alt="Depiction of the 2D structure of CE 16:1" />
 
+## Some examples
+
+Instead of depicting, we can just output the CXSMILES generated from the shorthand notation:
+
+**Script** [code/LiebischExamples.groovy](code/LiebischExamples.code.md)
+```groovy
+println LMAbbrevTool.cxsmiles("CE 8:0")
+println LMAbbrevTool.cxsmiles("LPC 10:1")
+```
+
+The output looks like this:
+
+```
+C1[C@H](OC(=O)CCCCCCC)CC2=CC[C@@]3([H])[C@]4([H]...
+  )CC[C@]([H])([C@]([H])(C)CCCC(C)C)[C@@]4(C)CC[...
+  C@]3([H])[C@@]2(C)C1
+[C@](COP(=O)([O-])OCC[N+](C)(C)C)([H])(O)COC(=O)...
+  CC=CC[H] |Sg:n:19:x:ht,Sg:n:22:y:ht| x+y=7
+```
+
 ## References
 
 1. <a name="citeref1"></a>Liebisch G, Vizcaíno JA, Köfeler H, Trötzmüller M, Griffiths WJ, Schmitz G, et al. Shorthand notation for lipid structures derived from mass spectrometry. J Lipid Res. 2013 Apr 2;54(6):1523–30.  doi:[10.1194/JLR.M033506](https://doi.org/10.1194/JLR.M033506) ([Scholia](https://scholia.toolforge.org/doi/10.1194/JLR.M033506))

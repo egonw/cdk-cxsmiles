@@ -49,6 +49,7 @@ Adriano Rutz. Also thanks to Emma Schymanski, John Mayfield, and Carolin Huber f
 5. [Depiction of CxSMILES](depict.md) <br />
 5.1. [Groovy code](depict.md#groovy-code) <br />
 6. [Liebisch abbreviations](liebisch.md) <br />
+6.1. [Some examples](liebisch.md#some-examples) <br />
 7. [Enumerating chemical structures for a CxSMILES](enumeration.md) <br />
 7.1. [Filtering by molecular formula](enumeration.md#filtering-by-molecular-formula) <br />
 

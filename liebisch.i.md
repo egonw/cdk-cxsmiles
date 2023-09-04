@@ -11,6 +11,16 @@ The output looks like this:
 
 <img src="./images/generated/CE_16:1.svg" width="400" alt="Depiction of the 2D structure of CE 16:1" />
 
+## Some examples
+
+Instead of depicting, we can just output the CXSMILES generated from the shorthand notation:
+
+<code>LiebischExamples</code>
+
+The output looks like this:
+
+<out>LiebischExamples</out>
+
 ## References
 
 <references/>
