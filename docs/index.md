@@ -48,8 +48,9 @@ Adriano Rutz. Also thanks to Emma Schymanski, John Mayfield, and Carolin Huber f
 4.3. [Step 3: the attachment points](chapter2.md#step-3:-the-attachment-points) <br />
 5. [Depiction of CxSMILES](depict.md) <br />
 5.1. [Groovy code](depict.md#groovy-code) <br />
-6. [Enumerating chemical structures for a CxSMILES](enumeration.md) <br />
-6.1. [Filtering by molecular formula](enumeration.md#filtering-by-molecular-formula) <br />
+6. [Liebisch abbreviations](liebisch.md) <br />
+7. [Enumerating chemical structures for a CxSMILES](enumeration.md) <br />
+7.1. [Filtering by molecular formula](enumeration.md#filtering-by-molecular-formula) <br />
 
 [Index](indexList.md) <br />
 
