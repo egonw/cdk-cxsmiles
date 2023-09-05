@@ -17,6 +17,7 @@ import org.openscience.cdk.depict.DepictionGenerator;
  class LMAbbrevTool {
 
   static Pattern CEpattern = Pattern.compile("CE\\s(\\d+):(\\d+)")
+  static Pattern FApattern = Pattern.compile("FA\\s(\\d+):(\\d+)")
   static Pattern LPCpattern = Pattern.compile("LPC\\s(\\d+):(\\d+)")
 
   static boolean canParse(String abbrev) {
@@ -66,6 +67,17 @@ import org.openscience.cdk.depict.DepictionGenerator;
         );
         return "[C@](COP(=O)([O-])OCC[N+](C)(C)C)([H])(O)C" + chainInfo[0] + chainInfo[1]  
       }
+    } else if (abbrev.startsWith("FA ")) {
+      Matcher matcher = FApattern.matcher(abbrev)
+      if (matcher.find()) {
+        String intOne = matcher.group(1);
+        String intTwo = matcher.group(2);
+        String[] chainInfo = makeChain(
+          Integer.valueOf(intOne), Integer.valueOf(intTwo),
+          1 // the first atom in the below SMILES
+        );
+        return chainInfo[0] + chainInfo[1]  
+      }
     }
     return "[*]";
   }
@@ -77,6 +89,7 @@ sp = new SmilesParser(
 )
 
 println LMAbbrevTool.cxsmiles("CE 8:0")
+println LMAbbrevTool.cxsmiles("FA 14:1")
 println LMAbbrevTool.cxsmiles("LPC 10:1")
 ```
 **Output:**
@@ -84,6 +97,7 @@ println LMAbbrevTool.cxsmiles("LPC 10:1")
 C1[C@H](OC(=O)CCCCCCC)CC2=CC[C@@]3([H])[C@]4([H]...
   )CC[C@]([H])([C@]([H])(C)CCCC(C)C)[C@@]4(C)CC[...
   C@]3([H])[C@@]2(C)C1
+OC(=O)CC=CC[H] |Sg:n:3:x:ht,Sg:n:6:y:ht| x+y=11
 [C@](COP(=O)([O-])OCC[N+](C)(C)C)([H])(O)COC(=O)...
   CC=CC[H] |Sg:n:19:x:ht,Sg:n:22:y:ht| x+y=7
 ```
