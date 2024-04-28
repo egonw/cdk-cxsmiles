@@ -15,10 +15,9 @@
 #  SilentChemObjectBuilder.getInstance()
 #)
 #
-cxsmiles = LMAbbrevTool.cxsmiles("CE 16:1")
-mol1 = sp.parseSmiles(cxsmiles)
+mol1 = sp.parseSmiles("CC(CC(C(=C)C(C)(C)C)(C(=O)(O))C)(C)C")
 
 new DepictionGenerator()
   .withMolTitle()
   .depict(mol1)
-  .writeTo("CE_16:1.svg");
+  .writeTo("FA_14:1.svg");

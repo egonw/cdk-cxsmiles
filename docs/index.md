@@ -2,7 +2,7 @@
 
 **Egon L. Willighagen, Adriano Rutz**
 
-© 2020-2023 The Authors
+© 2020-2024 The Authors
 
 License: CC-BY 4.0 International
 
@@ -49,7 +49,9 @@ Adriano Rutz. Also thanks to Emma Schymanski, John Mayfield, and Carolin Huber f
 5. [Depiction of CxSMILES](depict.md) <br />
 5.1. [Groovy code](depict.md#groovy-code) <br />
 6. [Liebisch abbreviations](liebisch.md) <br />
-6.1. [Some examples](liebisch.md#some-examples) <br />
+6.1. [CXSMILES](liebisch.md#cxsmiles) <br />
+6.1.1. [Some examples](liebisch.md#some-examples) <br />
+6.2. [Structure enumeration](liebisch.md#structure-enumeration) <br />
 7. [Enumerating chemical structures for a CxSMILES](enumeration.md) <br />
 7.1. [Filtering by molecular formula](enumeration.md#filtering-by-molecular-formula) <br />
 

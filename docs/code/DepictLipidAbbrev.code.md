@@ -1,7 +1,7 @@
 # DepictLipidAbbrev.groovy
 **Source code:**
 ```groovy
-@Grab(group='io.github.egonw.jliebisch', module='liebisch', version='1.0-SNAPSHOT')
+@Grab(group='io.github.egonw.jliebisch', module='liebisch', version='1.0')
 @Grab(group='org.openscience.cdk', module='cdk-smiles', version='2.9')
 @Grab(group='org.openscience.cdk', module='cdk-silent', version='2.9')
 @Grab(group='org.openscience.cdk', module='cdk-depict', version='2.9')

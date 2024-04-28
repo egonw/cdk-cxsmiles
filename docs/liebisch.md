@@ -3,7 +3,9 @@
 The Liebisch abbrevations are a shorthand notation for lipid structures. This is particularly useful
 when the lipid is incompletely characterized [<a href="#citeref1">1</a>,<a href="#citeref2">2</a>].
 
-For example, we can use the following code to depict `CE 16:1`, using CXSMILES as intermediate step:
+## CXSMILES
+
+We can use the following code to depict `CE 16:1`, using CXSMILES as intermediate step:
 
 **Script** [code/DepictLipidAbbrev.groovy](code/DepictLipidAbbrev.code.md)
 ```groovy
@@ -19,7 +21,7 @@ The output looks like this:
 
 <img src="./images/generated/CE_16:1.svg" width="400" alt="Depiction of the 2D structure of CE 16:1" />
 
-## Some examples
+### Some examples
 
 Instead of depicting, we can just output the CXSMILES generated from the shorthand notation:
 
@@ -40,6 +42,15 @@ OC(=O)CC=CC[H] |Sg:n:3:x:ht,Sg:n:6:y:ht| x+y=11
 [C@](COP(=O)([O-])OCC[N+](C)(C)C)([H])(O)COC(=O)...
   CC=CC[H] |Sg:n:19:x:ht,Sg:n:22:y:ht| x+y=7
 ```
+
+## Structure enumeration
+
+The abbreviation `FA 14:1` indicates the structure is a fatty acid with an chain with 13 carbon atoms
+(and 14 carbons in the compound in total), and with one double bond equivalent. There can be branching
+and there can even be rings. For example, this is said to be a valid `FA 14:1`:
+
+<img src="./images/generated/FA_14:1.svg" width="400" alt="Depiction of a theoretical structure of FA 14:1" />
+<!-- <code>FA14Branching</code> -->
 
 ## References
 
