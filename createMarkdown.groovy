@@ -61,6 +61,12 @@ lines.each { String line ->
     def srcLines = new File("code/${instruction.text()}.out").readLines()
     srcLines.each { String srcLine -> println srcLine }
     println "```"
+  } else if (line.startsWith("<in")) {
+    def instruction = new XmlSlurper().parseText(line)
+    if (instruction.@type == "verbatim") println "```plain"
+    def srcLines = new File("${instruction.text()}").readLines()
+    srcLines.each { String srcLine -> println srcLine }
+    if (instruction.@type == "verbatim") println "```"
   } else if (line.startsWith("<section")) {
     def instruction = new XmlSlurper().parseText(line)
     println "<a name=\"sec:${instruction.@label}\"></a>"
