@@ -14,12 +14,12 @@ mol1 = sp.parseSmiles(cxsmiles)
 new DepictionGenerator()
   .withMolTitle()
   .depict(mol1)
-  .writeTo("CE_16:1.svg");
+  .writeTo("CE_16_1.svg");
 ```
 
 The output looks like this:
 
-<img src="./images/generated/CE_16:1.svg" width="400" alt="Depiction of the 2D structure of CE 16:1" />
+<img src="./images/generated/CE_16_1.svg" width="400" alt="Depiction of the 2D structure of CE 16:1" />
 
 ### Some examples
 
@@ -49,7 +49,7 @@ The abbreviation `FA 14:1` indicates the structure is a fatty acid with an chain
 (and 14 carbons in the compound in total), and with one double bond equivalent. There can be branching
 and there can even be rings. For example, this is said to be a valid `FA 14:1`:
 
-<img src="./images/generated/FA_14:1.svg" width="400" alt="Depiction of a theoretical structure of FA 14:1" />
+<img src="./images/generated/FA_14_1.svg" width="400" alt="Depiction of a theoretical structure of FA 14:1" />
 <!-- <code>FA14Branching</code> -->
 
 If we take this loose definition, the number of possible structures is high. With Surge we can enumerate

@@ -23,7 +23,7 @@ mol1 = sp.parseSmiles(cxsmiles)
 new DepictionGenerator()
   .withMolTitle()
   .depict(mol1)
-  .writeTo("CE_16:1.svg");
+  .writeTo("CE_16_1.svg");
 ```
 **Output:**
 ```plain
