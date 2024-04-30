@@ -63,6 +63,17 @@ which lists:
 
 <out>SGroups</out>
 
+## Writing as an SD file
+
+We can also write a CXSMILES to a SD file. We can use the following code for this:
+
+<code>WriteSDF</code>
+
+The output uses the `*` as pseudoatom as in the input SMILES and exports the
+CXSMILES aspects as additional annotation after the mol block:
+
+<in type="verbatim">code/polybisacarb.sdf</in>
+
 ## References
 
 <references/>

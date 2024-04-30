@@ -52,6 +52,9 @@ and there can even be rings. For example, this is said to be a valid `FA 14:1`:
 <img src="./images/generated/FA_14:1.svg" width="400" alt="Depiction of a theoretical structure of FA 14:1" />
 <!-- <code>FA14Branching</code> -->
 
+If we take this loose definition, the number of possible structures is high. With Surge we can enumerate
+the number of structures
+
 ## References
 
 1. <a name="citeref1"></a>Liebisch G, Vizcaíno JA, Köfeler H, Trötzmüller M, Griffiths WJ, Schmitz G, et al. Shorthand notation for lipid structures derived from mass spectrometry. J Lipid Res. 2013 Apr 2;54(6):1523–30.  doi:[10.1194/JLR.M033506](https://doi.org/10.1194/JLR.M033506) ([Scholia](https://scholia.toolforge.org/doi/10.1194/JLR.M033506))

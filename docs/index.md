@@ -32,6 +32,7 @@ Adriano Rutz. Also thanks to Emma Schymanski, John Mayfield, and Carolin Huber f
 2.1.2. [Python](parsing.md#python) <br />
 2.1.3. [CDKDepict](parsing.md#cdkdepict) <br />
 2.2. [The internal graph model](parsing.md#the-internal-graph-model) <br />
+2.3. [Writing as an SD file](parsing.md#writing-as-an-sd-file) <br />
 3. [Classes of compounds and where to find a CxSMILES](templates.md) <br />
 3.1. [R-groups](templates.md#r-groups) <br />
 3.2. [Lipids](templates.md#lipids) <br />

@@ -111,6 +111,89 @@ CtabStructureRepeatUnit with 1 atoms and 2 bonds
 CtabStructureRepeatUnit with 1 atoms and 2 bonds
 ```
 
+## Writing as an SD file
+
+We can also write a CXSMILES to a SD file. We can use the following code for this:
+
+**Script** [code/WriteSDF.groovy](code/WriteSDF.code.md)
+```groovy
+cxSMILES = "O=C(*)Oc1ccc(cc1)C(C)(C)c1ccc(O*)cc1 |Sg:n:0,1,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,19,20::ht|"
+mol = sp.parseSmiles(cxSMILES)
+writer = new FileWriter(new File("polybisacarb.sdf"))
+SDFWriter sdfWriter = new SDFWriter(writer);
+sdfWriter.write(mol);
+```
+
+The output uses the `*` as pseudoatom as in the input SMILES and exports the
+CXSMILES aspects as additional annotation after the mol block:
+
+```plain
+
+  CDK     0430242125
+
+ 21 22  0  0  0  0  0  0  0  0999 V2000
+    0.0000    0.0000    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0000    0.0000    0.0000 *   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0000    0.0000    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0000    0.0000    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0000    0.0000    0.0000 *   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  2  0  0  0  0
+  2  3  1  0  0  0  0
+  2  4  1  0  0  0  0
+  4  5  1  0  0  0  0
+  5  6  2  0  0  0  0
+  6  7  1  0  0  0  0
+  7  8  2  0  0  0  0
+  8  9  1  0  0  0  0
+  9 10  2  0  0  0  0
+  5 10  1  0  0  0  0
+  8 11  1  0  0  0  0
+ 11 12  1  0  0  0  0
+ 11 13  1  0  0  0  0
+ 11 14  1  0  0  0  0
+ 14 15  2  0  0  0  0
+ 15 16  1  0  0  0  0
+ 16 17  2  0  0  0  0
+ 17 18  1  0  0  0  0
+ 18 19  1  0  0  0  0
+ 17 20  1  0  0  0  0
+ 20 21  2  0  0  0  0
+ 14 21  1  0  0  0  0
+M  STY  1   1 SRU
+M  SAL   1 15   1  13   9   2   4  20  17  21   5  18  11  16   6   8  12
+M  SAL   1  4  15   7  10  14
+M  SBL   1  2   2  19
+M  SMT   1 n
+M  SCN  1   1 HT
+M  END
+> <PUBCHEM_SUBSTANCE_SYNONYM>
+Poly(bisphenol-A-carbonate
+
+> <PUBCHEM_SUBSTANCE_COMMENT>
+O=C(*)Oc1ccc(cc1)C(C)(C)c1ccc(O*)cc1 |Sg:n:0,1,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,19,20::ht|
+
+> <PUBCHEM_EXT_DATASOURCE_REGID>
+NISTpolymer0006
+
+$$$$
+```
+
 ## References
 
 1. <a name="citeref1"></a>Willighagen E. Bacting: a next generation, command line version of Bioclipse. JOSS. 2021 Jun 23;6(62):2558.  doi:[10.21105/JOSS.02558](https://doi.org/10.21105/JOSS.02558) ([Scholia](https://scholia.toolforge.org/doi/10.21105/JOSS.02558))
