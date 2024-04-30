@@ -1,0 +1,28 @@
+# TemplateLipidTwoTail.groovy
+**Source code:**
+```groovy
+@Grab(group='org.openscience.cdk', module='cdk-smiles', version='2.9')
+@Grab(group='org.openscience.cdk', module='cdk-silent', version='2.9')
+@Grab(group='org.openscience.cdk', module='cdk-depict', version='2.9')
+
+import org.openscience.cdk.smiles.SmilesParser;
+import org.openscience.cdk.interfaces.*;
+import org.openscience.cdk.silent.SilentChemObjectBuilder;
+import org.openscience.cdk.isomorphism.UniversalIsomorphismTester;
+import org.openscience.cdk.depict.DepictionGenerator;
+
+sp = new SmilesParser(
+  SilentChemObjectBuilder.getInstance()
+)
+
+lipid = sp.parseSmiles(
+  "OCC(OC(=O)C[H])COC(=O)C[H] |Sg:n:6:x:ht,Sg:n:12:y:ht| x+y=28"
+)
+new DepictionGenerator()
+  .withMolTitle()
+  .depict(lipid)
+  .writeTo("lipid_twotail.svg");
+```
+**Output:**
+```plain
+```
