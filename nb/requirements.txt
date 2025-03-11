@@ -1,0 +1,6 @@
+notebook
+regex
+scyjava
+jupyterlab
+ipython
+pybacting
