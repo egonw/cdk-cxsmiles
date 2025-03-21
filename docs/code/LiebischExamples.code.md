@@ -1,7 +1,7 @@
 # LiebischExamples.groovy
 **Source code:**
 ```groovy
-@Grab(group='io.github.egonw.jliebisch', module='liebisch', version='1.0-SNAPSHOT')
+@Grab(group='io.github.egonw.jliebisch', module='liebisch', version='1.1')
 
  import io.github.egonw.jliebisch.LMAbbrevTool
 

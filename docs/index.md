@@ -44,6 +44,7 @@ Adriano Rutz. Also thanks to Emma Schymanski, John Mayfield, and Carolin Huber f
 3.3.1. [Flavonoid](templates.md#flavonoid) <br />
 3.4. [Polymers](templates.md#polymers) <br />
 3.4.1. [Co-polymers](templates.md#co-polymers) <br />
+3.5. [Functional groups](templates.md#functional-groups) <br />
 4. [Creating CxSMILES](chapter2.md) <br />
 4.1. [Step 1: the core structure](chapter2.md#step-1:-the-core-structure) <br />
 4.2. [Step 2: the side chains](chapter2.md#step-2:-the-side-chains) <br />

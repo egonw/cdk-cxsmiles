@@ -81,4 +81,15 @@ Similarly, co-polymers can be represented with something like, here a block poly
 <img src="./images/generated/copolymer.svg" width="400" alt="SVG depiction of a block co-polymer as a repeating monomer" />
 <out>TemplateCopolymer</out>
 
-Wikidata has multiple CXSMILES for polynmers. You can list these with [this SPARQL query](https://w.wiki/7JTv).
+Wikidata has multiple CXSMILES for polymers. You can list these with [this SPARQL query](https://w.wiki/7JTv).
+
+## Functional groups
+
+Another useful option is using CXSMILES for functionality groups, using the `_AP` instruction.
+For example, an hydroxyl functional group can be representated as `*O |$_AP1$|`:
+
+<img src="./images/generated/hydroxyl.svg" width="200" alt="SVG depiction of a hydroxyl functional group" />
+<out>Hydroxyl</out>
+
+
+
