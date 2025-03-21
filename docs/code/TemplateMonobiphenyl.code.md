@@ -16,7 +16,7 @@ sp = new SmilesParser(
 )
 
 mol = sp.parseSmiles(
-  "Cl*.c1ccccc1-c1ccccc1 |m:1:3.4.5.6.7.8.9|"
+  "Cl*.c1ccc(cc1)-c1ccccc1 |m:1:4.5.6.7.2.3|"
 )
 new DepictionGenerator()
   .depict(mol)

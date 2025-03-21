@@ -35,6 +35,7 @@ Adriano Rutz. Also thanks to Emma Schymanski, John Mayfield, and Carolin Huber f
 2.3. [Writing as an SD file](parsing.md#writing-as-an-sd-file) <br />
 3. [Classes of compounds and where to find a CxSMILES](templates.md) <br />
 3.1. [R-groups](templates.md#r-groups) <br />
+3.1.1. [Numbered R-groups](templates.md#numbered-r-groups) <br />
 3.2. [Lipids](templates.md#lipids) <br />
 3.2.1. [Lipids with a double bond somewhere in the tail](templates.md#lipids-with-a-double-bond-somewhere-in-the-tail) <br />
 3.2.2. [Lipids with two double bonds somewhere in the tail](templates.md#lipids-with-two-double-bonds-somewhere-in-the-tail) <br />

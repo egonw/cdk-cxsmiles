@@ -9,6 +9,13 @@ This is done with the following CXSMILES pattern like
 <img src="./images/generated/rgroup.svg" width="400" alt="SVG depiction of a compound with two R-groups." />
 <out>RGroup</out>
 
+### Numbered R-groups
+
+If you want the R-groups numbers, that is possible too. The same compound as in the previous example
+can have have numbered R-groups with a CXSMILES like `[NH3+]CCOP([O-])(=O)OC[C@@H](CO\C=C/[*])OC([*])=O |$;;;;;;;;;;;;;;R1;;;R2$|`:
+
+<img src="./images/generated/rgroup-numbered.svg" width="400" alt="SVG depiction of a compound with two numbered R-groups." />
+<out>RGroupNumbered</out>
 
 ## Lipids
 

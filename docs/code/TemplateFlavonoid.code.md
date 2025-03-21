@@ -16,7 +16,7 @@ sp = new SmilesParser(
 )
 
 flavo = sp.parseSmiles(
-  "O*.O*.C1=C(C(=C2C(=C1)OC(=CC2=O)C3=CC(=C(C=C3)))).O* |m:3:4.5,m:1:8.9,m:22:18.19|"
+  "O*.O*.O=C1C=C(Oc2ccccc12)c1ccccc1 |c:4,m:1:16.15.20.19.18.17,3:12.13.14.9.10.11|"
 )
 new DepictionGenerator()
   .withMolTitle()
