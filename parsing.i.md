@@ -35,6 +35,9 @@ display(IPython.display.SVG(svg))
 We can even open this as a <topic>Jupyter Notebook</topic> in
 [Google Colab](https://colab.research.google.com/github/egonw/cdk-cxsmiles/blob/master/nb/parseCxSMILES.ipynb).
 
+There are more examples available from [this notebook](https://github.com/egonw/cdk-cxsmiles/blob/master/nb/lipid_cxsmiles_scyjava_cdk.ipynb)
+by Zhixu Ni, which can also be opened in [Google Colab](https://colab.research.google.com/github/egonw/cdk-cxsmiles/blob/master/nb/lipid_cxsmiles_scyjava_cdk.ipynb).
+
 ### CDKDepict
 
 Finally, the online [CDKDepict](https://www.simolecule.com/cdkdepict/depict.html) can parse and process CxSMILES strings for
