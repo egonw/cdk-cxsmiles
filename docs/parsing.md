@@ -41,6 +41,9 @@ display(IPython.display.SVG(svg))
 We can even open this as a <a name="tp4">Jupyter Notebook</a> in
 [Google Colab](https://colab.research.google.com/github/egonw/cdk-cxsmiles/blob/master/nb/parseCxSMILES.ipynb).
 
+There are more examples available from [this notebook](https://github.com/egonw/cdk-cxsmiles/blob/master/nb/lipid_cxsmiles_scyjava_cdk.ipynb)
+by Zhixu Ni, which can also be opened in [Google Colab](https://colab.research.google.com/github/egonw/cdk-cxsmiles/blob/master/nb/lipid_cxsmiles_scyjava_cdk.ipynb).
+
 ### CDKDepict
 
 Finally, the online [CDKDepict](https://www.simolecule.com/cdkdepict/depict.html) can parse and process CxSMILES strings for
@@ -129,7 +132,7 @@ CXSMILES aspects as additional annotation after the mol block:
 
 ```plain
 
-  CDK     03212515522D
+  CDK     07312511242D
 
  21 22  0  0  0  0  0  0  0  0999 V2000
    -5.2108   -1.5321    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
@@ -176,13 +179,13 @@ CXSMILES aspects as additional annotation after the mol block:
  20 21  2  0  0  0  0
  14 21  1  0  0  0  0
 M  STY  1   1 SRU
-M  SAL   1 15   7   9  14   5  11  12   6  21   2   4  13  17  15  16   1
-M  SAL   1  4  18   8  20  10
-M  SBL   1  2   2  19
+M  SAL   1 15  21  18   2   4   9   6  20   7   1  16  14   8  12  10  11
+M  SAL   1  4  13  15   5  17
+M  SBL   1  2  19   2
 M  SMT   1 n
 M  SCN  1   1 HT
-M  SDI   1  4   -4.5992   -0.0270   -3.2492   -0.0159
 M  SDI   1  4   -1.6471    7.0407   -0.3747    6.5894
+M  SDI   1  4   -4.5992   -0.0270   -3.2492   -0.0159
 M  END
 > <PUBCHEM_SUBSTANCE_COMMENT>
 O=C(*)Oc1ccc(cc1)C(C)(C)c1ccc(O*)cc1 |Sg:n:0,1,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,19,20::ht|

@@ -1,8 +1,8 @@
 # MCS.groovy
 **Source code:**
 ```groovy
-@Grab(group='org.openscience.cdk', module='cdk-smiles', version='2.10')
-@Grab(group='org.openscience.cdk', module='cdk-silent', version='2.10')
+@Grab(group='org.openscience.cdk', module='cdk-smiles', version='2.11')
+@Grab(group='org.openscience.cdk', module='cdk-silent', version='2.11')
 
 import org.openscience.cdk.smiles.SmilesParser;
 import org.openscience.cdk.interfaces.*;
