@@ -25,7 +25,7 @@ mol1 = sp.parseSmiles("[H]C\\C=C\\CC(=O)O |Sg:n:1:x:ht,Sg:n:4:y:ht|")
 
 ### Python
 
-However, we can also use [pybacting]() and parse the CxSMILES with <a name="tp2">Bacting</a> [<a href="#citeref1">1</a>]
+However, we can also use [pybacting](https://pypi.org/project/pybacting/) and parse the CxSMILES with <a name="tp2">Bacting</a> [<a href="#citeref1">1</a>]
 (which uses the CDK in turn) in <a name="tp3">Python</a>:
 
 ```python

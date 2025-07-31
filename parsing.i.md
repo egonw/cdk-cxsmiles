@@ -19,7 +19,7 @@ looks like this:
 
 ### Python
 
-However, we can also use [pybacting]() and parse the CxSMILES with <topic>Bacting</topic> [<cite>Q107332190</cite>]
+However, we can also use [pybacting](https://pypi.org/project/pybacting/) and parse the CxSMILES with <topic>Bacting</topic> [<cite>Q107332190</cite>]
 (which uses the CDK in turn) in <topic>Python</topic>:
 
 ```python

@@ -10,7 +10,7 @@ License: CC-BY 4.0 International
 
 At the Dagstuhl Computation Metabolomics meetings in
 <a href="https://www.dagstuhl.de/20051">2020</a> [<a href="#citeref1">1</a>],
-<a href="https://www.dagstuhl.de/22181>2022</a> [<a href="#citeref2">2</a>], and
+<a href="https://www.dagstuhl.de/22181">2022</a> [<a href="#citeref2">2</a>], and
 <a href="https://www.dagstuhl.de/24181">2024</a>
 there were sessions about core structures, structure identity certainty, and identification.
 
